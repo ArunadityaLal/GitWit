@@ -34,3 +34,16 @@ Before you begin, ensure you have the following installed:
 ```bash
 git clone https://github.com/yourusername/github-profile-analyzer.git
 cd github-profile-analyzer
+```
+
+2. Install Dependencies
+
+```bash
+npm install
+```
+
+3. Run the app
+
+```bash
+npm run dev
+```
