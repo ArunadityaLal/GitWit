@@ -1,54 +1,37 @@
-# React + TypeScript + Vite
+# GitHub Profile Analyzer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React application that allows you to search for GitHub users and view their profile information, repositories, and commit activity.
 
-Currently, two official plugins are available:
+![GitHub Profile Analyzer Screenshot](/placeholder.svg?height=400&width=800)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Search for GitHub users by username
+- View detailed user profile information
+- Browse user's repositories with stars, forks, and language information
+- Visualize commit activity over the last 30 days
+- Responsive design that works on desktop and mobile
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Technologies Used
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- React 18+
+- TypeScript
+- Vite
+- Tailwind CSS
+- shadcn/ui components
+- Recharts for data visualization
+- GitHub REST API
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Prerequisites
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Before you begin, ensure you have the following installed:
+- Node.js (v18 or higher)
+- pnpm, npm, or yarn
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/github-profile-analyzer.git
+cd github-profile-analyzer
