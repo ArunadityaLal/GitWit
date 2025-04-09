@@ -2,7 +2,6 @@
 
 A React application that allows you to search for GitHub users and view their profile information, repositories, and commit activity.
 
-![GitHub Profile Analyzer Screenshot](/placeholder.svg?height=400&width=800)
 
 ## Features
 
